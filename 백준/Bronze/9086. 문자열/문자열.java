@@ -11,7 +11,8 @@ class Main {
         for(int i = 0; i < T; i++){
             String S = br.readLine();
             int length = S.length();
-            bw.write(Character.toString(S.charAt(0)) + Character.toString(S.charAt(length-1)) + "\n");
+            S = S.substring(0, 1) + S.substring(length-1, length);
+            bw.write(S + "\n");
         }
 
         bw.flush();
