@@ -6,7 +6,5 @@ function solution(hp) {
     let second = Math.floor(hp / 3);
     hp -= second * 3;
     
-    let final = Math.floor(hp / 1);
-    
-    return first + second + final;
+    return first + second + hp;
 }
